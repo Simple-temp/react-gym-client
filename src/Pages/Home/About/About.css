@@ -1,0 +1,23 @@
+.about 
+{
+    margin-top:100px;
+}
+.a-box h2 
+{
+    text-transform: uppercase;
+    font-size:30px;
+    font-weight:bold;
+    color:rgb(177, 177, 177);
+}
+.a-box h3 
+{
+    text-transform:uppercase;
+}
+.a-box h3 span
+{
+    color:rgb(255, 251, 0);
+}
+.img-box img 
+{
+    height:400px;
+}
