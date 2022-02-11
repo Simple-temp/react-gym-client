@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Nabvar.css"
 
 const Navbar = () => {
@@ -12,25 +13,25 @@ const Navbar = () => {
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
+                            <Link class="nav-link" to="/">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Services</a>
+                            <Link class="nav-link" to="/">Services</Link>
                         </li>
                         <li class='nav-item'>
-                            <a class="nav-link" href="/">Our Classes</a>
+                            <Link class="nav-link" to="/classes">Our Classes</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">About Us</a>
+                            <Link class="nav-link" to="/">About Us</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Blog</a>
+                            <Link class="nav-link" to="/">Blog</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Pricing</a>
+                            <Link class="nav-link" to="/">Pricing</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Contact Us</a>
+                            <Link class="nav-link" to="/">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
