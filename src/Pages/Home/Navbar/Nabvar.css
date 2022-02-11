@@ -21,3 +21,8 @@
     color:rgb(255, 251, 0);
     font-weight:bold;
 }
+.navbar-toggler i 
+{
+    color:#fff;
+    font-size:30px;
+}

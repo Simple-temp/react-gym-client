@@ -1,0 +1,31 @@
+footer  
+{
+    background-color: rgba(23,20,38,255);
+    padding: 50px 0 20px 0;
+    position:relative;
+}
+.f-box{
+    margin:10px;
+}
+.f-box span{
+    color:rgb(255, 251, 0);
+    font-size:20px;
+    margin-left:10px;
+}
+.icon-box i 
+{
+    margin:3px;
+}
+.link-box a 
+{
+    text-decoration:none;
+    color:rgb(230, 230, 230);
+    text-transform:capitalize;
+    width:100%;
+    display:block;
+    margin-top:20px;
+}
+.f-box-body .des
+{
+    margin-top:20px;
+}
