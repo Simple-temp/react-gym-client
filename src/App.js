@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AdvancedGym from "./Pages/AdvancedGym/AdvancedGym/AdvancedGym";
 import Classes from "./Pages/Classes/Classes/Classes";
 import Home from "./Pages/Home/Home/Home";
+import Pricing from "./Pages/Pricing/Pricing/Pricing";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/classes" element={<Classes/>}/>
           <Route path="/advancedgym/:key" element={<AdvancedGym/>}/>
+          <Route path="/pricing" element={<Pricing/>}/>
         </Routes>
       </Router>
     </div>
