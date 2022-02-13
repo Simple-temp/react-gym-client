@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./PricingInfo.css"
 
 const PricingInfo = () => {
@@ -55,7 +56,7 @@ function ShowPricing({price}){
                             <li>happy customers</li>
                         </ul>
                     </div>
-                    <button className='custom-btn d-block mx-auto mt-5'>purchase</button>
+                    <Link to="/membership" className='join-btn'><button className='custom-btn d-block mx-auto mt-5'>purchase</button></Link>
                 </div>
             </div>
         </>
