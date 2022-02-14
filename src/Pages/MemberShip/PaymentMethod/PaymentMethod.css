@@ -1,0 +1,14 @@
+.cardnumber{
+    margin:15px 0;
+    border:1px solid rgb(212, 212, 212);
+    padding:12px;
+}
+:focus{
+    outline:none;
+}
+.ca-img{
+    margin-right:10px;
+}
+.card-info h2{
+    font-size:24px;
+}
