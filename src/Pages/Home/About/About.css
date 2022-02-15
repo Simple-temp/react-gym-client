@@ -12,12 +12,15 @@
 .a-box h3 
 {
     text-transform:uppercase;
+    font-weight:700;
+    margin-top:11px;
 }
 .a-box h3 span
 {
     color:rgb(255, 251, 0);
 }
-.img-box img 
-{
-    height:400px;
+@media (max-width:768px) {
+    .a-box{
+        margin-top:24px;
+    }
 }

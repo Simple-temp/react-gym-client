@@ -15,6 +15,9 @@ h3{
     position:relative;
     margin:10px;
 }
+.train-box img{
+    height:350px;
+}
 .train-box .p
 {
     position:absolute;
@@ -29,4 +32,14 @@ h3{
 {
     margin-top:10px;
     padding-right:10px;
+}
+@media (max-width:992px) {
+    .train-box img{
+        height:300px;
+    }
+}
+@media (max-width:540px) {
+    .train-box img{
+        height:250px;
+    }
 }

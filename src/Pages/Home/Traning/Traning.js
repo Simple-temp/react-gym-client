@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Traning.css"
-import t1 from "../../../img/t1.jpg"
-import t2 from "../../../img/t2.jpg"
+import t1 from "../../../img/h1.png"
+import t2 from "../../../img/h2.jpg"
 
 const Traning = () => {
 
