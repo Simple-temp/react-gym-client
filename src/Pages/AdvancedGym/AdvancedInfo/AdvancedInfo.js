@@ -2,21 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import "./AdvancedInfo.css"
 import c from "../../../img/c.png"
-import defaul from "../../../img/about3.png"
+import defaul from "../../../img/z3.jpg"
 
 const AdvancedInfo = () => {
 
     const { key } = useParams()
 
-    const [item, setItem] = useState("")
+    const [item, setItem] = useState({})
 
     useEffect(() => {
         fetch(`http://localhost:4000/selcetedgym/${key}`)
             .then(res => res.json())
-            .then(data => setItem(data))
+            .then(data => {
+                setItem(data)
+                console.log(data)
+            })
     }, [])
 
-    const { des, image } = item;
 
     return (
         <div className='advancedinfo'>
@@ -24,10 +26,9 @@ const AdvancedInfo = () => {
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-12">
                         <div className="left-side">
-                            {/* <img src={`data:image/png;base64,${image.img}`} alt="" /> */}
                             <img src={defaul} alt="" className='img-fluid w-100 mt-5' style={{height:"350px"}} />
                             <h2 className='text-uppercase py-3'>{key}</h2>
-                            <p>{des}</p>
+                            <p>{item.des}</p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">

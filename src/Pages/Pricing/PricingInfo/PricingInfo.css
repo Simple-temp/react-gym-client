@@ -3,11 +3,14 @@
 }
 .pricing-box
 {
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     color:#fff;
     text-transform:uppercase;
     padding:20px 20px 40px 20px;
-    margin:10px;
+    position: absolute;
+    top:0;
+    height:100%;
+    width:100%;
 }
 .pricing-head{
     text-align:center;
@@ -36,4 +39,8 @@
 }
 .pricing-body{
     margin-left:25%;
+}
+.pricing-main{
+    position:relative;
+    margin:10px 0;
 }
