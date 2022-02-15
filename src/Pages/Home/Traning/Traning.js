@@ -19,7 +19,7 @@ const Traning = () => {
     return (
         <section className='traning'>
             <h3 className='text-center my-5'>Traning <span>programs</span></h3>
-            <div className="container w-75 mx-auto">
+            <div className="container">
                 <div className="row">
                     {
                         training.map(train => <ShowTraning train={train}></ShowTraning>)

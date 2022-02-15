@@ -8,7 +8,7 @@ const About = () => {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-12 img-box d-flex justify-content-center">
-                        <img src={about} alt="" className="img-fluid w-75" />
+                        <img src={about} alt="" className="img-fluid" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                         <div className="a-box">

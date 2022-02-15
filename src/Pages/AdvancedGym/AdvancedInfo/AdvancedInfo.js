@@ -11,7 +11,7 @@ const AdvancedInfo = () => {
     const [item, setItem] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:4000/selcetedgym/${key}`)
+        fetch(`https://gym-server-node.herokuapp.com/selcetedgym/${key}`)
             .then(res => res.json())
             .then(data => {
                 setItem(data)
@@ -26,7 +26,7 @@ const AdvancedInfo = () => {
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-12">
                         <div className="left-side">
-                            <img src={defaul} alt="" className='img-fluid w-100 mt-5' style={{height:"350px"}} />
+                            <img src={defaul} alt="" className='img-fluid mt-5' />
                             <h2 className='text-uppercase py-3'>{key}</h2>
                             <p>{item.des}</p>
                         </div>

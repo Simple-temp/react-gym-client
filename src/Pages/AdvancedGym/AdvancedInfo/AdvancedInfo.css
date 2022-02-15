@@ -1,6 +1,6 @@
 .advancedinfo
 {
-    padding:60px;
+    padding:60px 0;
 }
 .c-img{
     margin-right:10px;
@@ -41,4 +41,16 @@
 }
 .join-btn:hover{
     color:#000;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+@media (max-width:340px) {
+    .date-box{
+        padding:3px;
+        margin:8px 0;
+    }
+    .left-side img{
+        height:200px;
+    }
 }

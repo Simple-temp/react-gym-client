@@ -8,7 +8,7 @@ const ClassesType = () => {
     const [gym, setGym] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:4000/getgymservices`)
+        fetch(`https://gym-server-node.herokuapp.com/getgymservices`)
             .then(res => res.json())
             .then(data => setGym(data))
     }, [])
@@ -109,7 +109,7 @@ export default ClassesType;
         fromData.append("des", info.des)
         fromData.append("key", info.key)
 
-        fetch(`http://localhost:4000/postgymitem`, {
+        fetch(`https://gym-server-node.herokuapp.com/postgymitem`, {
             method: "POST",
             body: fromData
         })
