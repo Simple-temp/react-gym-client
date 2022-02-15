@@ -12,3 +12,14 @@
 .card-info h2{
     font-size:24px;
 }
+@media (max-width:540px) {
+    .card-info{
+        display:none;
+    }
+}
+@media (max-width:340px) {
+    .ca-img{
+        margin-right:10px;
+        width:50px;
+    }
+}

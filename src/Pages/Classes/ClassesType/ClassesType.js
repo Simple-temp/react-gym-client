@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import loading from "../../../img/loading.gif"
 import "./ClassesType.css"
 
 const ClassesType = () => {
@@ -17,6 +18,7 @@ const ClassesType = () => {
             <div className="container">
                 <div className="row">
                     {
+                        gym.length === 0 ? <img src={loading} alt="" style={{width:"300px"}} className="mx-auto"/> :
                         gym.map(gymservices => <ShowGym gymservices={gymservices}></ShowGym>)
                     }
                 </div>

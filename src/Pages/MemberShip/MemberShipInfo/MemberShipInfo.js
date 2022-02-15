@@ -5,23 +5,22 @@ import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
 
-
 const MemberShipInfo = () => {
-
-    const [info,setInfo] = useState({})
-
-    const [membership,setMembership] = useState(null)
 
     const stripePromise = loadStripe('pk_test_51KJhEFFesKPGWiP3YH9pPx3aDpRX44wil8afCvneKe2ziTVEPoBgXnEFnanssjwK1RbAeyKbQV5kSBYGcjeOsxoB00m0ZXAjF8');
 
-    const handleBlur = (e) =>{
-        const newInfo = {...info}
-        newInfo[e.target.name]=e.target.value
+    const [info, setInfo] = useState({})
+
+    const [membership, setMembership] = useState(null)
+
+    const handleBlur = (e) => {
+        const newInfo = { ...info }
+        newInfo[e.target.name] = e.target.value
         setInfo(newInfo)
         console.log(newInfo)
     }
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = (e) => {
         setMembership(info)
         e.preventDefault()
     }
@@ -30,7 +29,7 @@ const MemberShipInfo = () => {
         <div className='membershipinfo'>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-10 mx-auto" style={{display: membership ? "none" : "block"}}>
+                    <div className="col-lg-10 mx-auto" style={{ display: membership ? "none" : "block" }}>
                         <form class="row g-3" onSubmit={handleSubmit}>
                             <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">First Name</label>
@@ -81,7 +80,7 @@ const MemberShipInfo = () => {
                             </div>
                         </form>
                     </div>
-                    <div className="col-lg-8 mx-auto" style={{display: membership ? "block" : "none"}}>
+                    <div className="col-lg-8 mx-auto" style={{ display: membership ? "block" : "none" }}>
                         <Elements stripe={stripePromise}>
                             <PaymentMethod></PaymentMethod>
                         </Elements>
