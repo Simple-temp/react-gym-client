@@ -45,6 +45,7 @@ const Footer = () => {
                     }
                 </div>
             </div>
+            <p className='text-center text-white mt-4'>Copyright by Aziz &copy; {new Date().getFullYear()} | All right reserved </p>
         </footer>
     );
 };
