@@ -1,5 +1,5 @@
 # react-gym-client
-Technologys: react, react-router-dom, react-stripe, paypal-payment getway, font-awesome-icon, bootstrap and responsive.<br>
+Technologys: react, react-router-dom,react-hooks, react-stripe, paypal-payment getway, font-awesome-icon, bootstrap and responsive.<br>
 This agency website is responsive.total page in this website.<br>
 
 1. home page
