@@ -11,7 +11,7 @@ const AdvancedInfo = () => {
     const [item, setItem] = useState({})
 
     useEffect(() => {
-        fetch(`https://gym-server-node.herokuapp.com/selcetedgym/${key}`)
+        fetch(`https://gym-udb3.onrender.com/selcetedgym/${key}`)
             .then(res => res.json())
             .then(data => {
                 setItem(data)
